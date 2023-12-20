@@ -1,0 +1,10 @@
+[
+    {
+        "path": "/",
+        "name": "Home",
+        "auth": false,
+        "component": "Home",
+        "dynamic": false,
+        "meta": {}
+    }
+]
