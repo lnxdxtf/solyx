@@ -12,7 +12,10 @@
             class="w-3/4 h-full animate__animated animate__fadeIn bg-primary-content p-2 rounded-box" />
         </router-view>
 
-        <div class="w-1/4 h-full bg-primary-content p-2 rounded-box"></div>
+        <div class="w-1/4 h-full grid grid-cols-1 gap-4 bg-primary-content p-2 rounded-box">
+          <!-- ACCOUNT DATA CONTENT -->
+          <!-- MAIN CRYPTO CONTENT PRICE -->
+        </div>
 
       </div>
 
@@ -26,17 +29,18 @@
   </div>
 </template>
 
-<script setup lang="ts">
+<script setup>
 import { themeChange } from 'theme-change'
 import TopBar from './components/TopBar.vue';
 import FooterBar from './components/FooterBar.vue';
 import ModalConnect from './components/ModalConnect.vue';
 import Transactions from './components/transaction/Transactions.vue';
-
+import { invoke } from '@tauri-apps/api/tauri'
 
 themeChange(true)
 const theme = localStorage.getItem('theme') || 'synthwave'
 const html_doc = document.querySelector("html")
 html_doc.setAttribute("data-theme", theme);
+invoke('close_splashscreen')
 
 </script>

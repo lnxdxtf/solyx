@@ -5,7 +5,8 @@
     },
     "dependencies": {
         "@coral-xyz/anchor": "^0.29.0",
-        "@metaplex-foundation/mpl-token-metadata": "^3.1.2"
+        "@metaplex-foundation/mpl-token-metadata": "^3.1.2",
+        "vue-toastification": "^2.0.0-rc.5"
     },
     "devDependencies": {
         "@types/bn.js": "^5.1.0",

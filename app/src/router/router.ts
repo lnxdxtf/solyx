@@ -11,7 +11,7 @@ const dynamic_routes: RouteRecordRaw[] = routes.map(r => {
         name: r.name,
         component: lazy_load_page(r.component),
         meta: r.meta,
-        beforeEnter: (to: any, from: any, next: any) => {
+        beforeEnter: (_to: any, _from: any, next: any) => {
             if (r.auth) {
                 next()
             } else {

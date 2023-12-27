@@ -1,7 +1,7 @@
 {
   "build": {
-    "beforeBuildCommand": "bun run build",
-    "beforeDevCommand": "bun run dev",
+    "beforeBuildCommand": "npm run build",
+    "beforeDevCommand": "npm run dev",
     "devPath": "http://localhost:5173",
     "distDir": "../dist"
   },
@@ -11,7 +11,13 @@
   },
   "tauri": {
     "allowlist": {
-      "all": false
+      "all": true
+    },
+    "systemTray": {
+      "iconAsTemplate": true,
+      "iconPath": "icons/icon.png",
+      "menuOnLeftClick": true,
+      "title": "solyx"
     },
     "bundle": {
       "active": true,
@@ -28,7 +34,7 @@
         "icons/icon.icns",
         "icons/icon.ico"
       ],
-      "identifier": "com.tauri.dev",
+      "identifier": "com.solyx.app",
       "longDescription": "",
       "macOS": {
         "entitlements": null,
@@ -59,7 +65,18 @@
         "minWidth": 1080,
         "resizable": true,
         "maximized": true,
+        "label": "main",
+        "visible": false,
         "title": "solyx"
+      },
+      {
+        "fullscreen": false,
+        "minHeight": 720,
+        "minWidth": 1080,
+        "resizable": true,
+        "maximized": true,
+        "url": "splashscreen.html",
+        "label": "splashscreen"
       }
     ]
   }

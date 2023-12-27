@@ -3,7 +3,7 @@
         <div class="navbar">
             <div class="flex-1">
                 <a class="btn btn-ghost text-xl">Solyx</a>
-                <img src="/sun.svg" class="w-10 h-10 bg-accent rounded-full">
+                <img src="/solyx.png" class="w-10 h-10 bg-accent rounded-full">
             </div>
 
             <div class="flex-none gap-2">

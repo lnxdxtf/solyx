@@ -6,5 +6,21 @@
         "component": "Home",
         "dynamic": false,
         "meta": {}
+    },
+    {
+        "path": "/account/new",
+        "name": "AccountNew",
+        "auth": false,
+        "component": "AccountNew",
+        "dynamic": false,
+        "meta": {}
+    },
+    {
+        "path": "/account/import",
+        "name": "AccountImport",
+        "auth": false,
+        "component": "AccountImport",
+        "dynamic": false,
+        "meta": {}
     }
 ]
