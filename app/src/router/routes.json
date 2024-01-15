@@ -1,0 +1,37 @@
+[
+    {
+        "path": "/",
+        "name": "Home",
+        "auth": false,
+        "component": "Home",
+        "dynamic": false,
+        "meta": {}
+    },
+    {
+        "path": "/ecosystem",
+        "name": "Ecosystem",
+        "auth": false,
+        "component": "Ecosystem",
+        "dynamic": false,
+        "meta": {}
+    },
+    {
+        "path": "/about",
+        "name": "About",
+        "auth": false,
+        "component": "About",
+        "dynamic": false,
+        "meta": {}
+    },
+
+
+    {
+        "path": "/account",
+        "name": "Account",
+        "auth": true,
+        "component": "Account",
+        "dynamic": false,
+        "meta": {}
+    }
+    
+]

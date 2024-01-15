@@ -1,0 +1,15 @@
+#!/bin/bash
+
+DEPLOY_PATH="target/deploy"
+PROGRAM_01="solyx.so"
+PROGRAM_02="solyx_token.so"
+
+PROGRAM_01_BYTES=$(du -b $DEPLOY_PATH/$PROGRAM_01 | cut -f1)
+PROGRAM_01_SOLANA_CALC=$((2 * PROGRAM_01_BYTES + 45 ))
+PROGRAM_01_SOLANA_RENT=$(solana rent $PROGRAM_01_SOLANA_CALC | cut -f1)
+echo "Program $PROGRAM_01: $PROGRAM_01_BYTES bytes | Solana Price Deploy: $PROGRAM_01_SOLANA_RENT"
+
+PROGRAM_02_BYTES=$(du -b $DEPLOY_PATH/$PROGRAM_02 | cut -f1)
+PROGRAM_02_SOLANA_CALC=$((2 * PROGRAM_02_BYTES + 45 ))
+PROGRAM_02_SOLANA_RENT=$(solana rent $PROGRAM_02_SOLANA_CALC | cut -f1)
+echo "Program $PROGRAM_02: $PROGRAM_02_BYTES bytes | Solana Price Deploy: $PROGRAM_02_SOLANA_RENT"

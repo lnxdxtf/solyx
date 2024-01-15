@@ -1,0 +1,41 @@
+{
+  "name": "app",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vue-tsc && vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@project-serum/anchor": "^0.26.0",
+    "@solana/web3.js": "^1.87.6",
+    "@tresjs/cientos": "^3.7.0",
+    "@tresjs/core": "^3.6.0",
+    "@tresjs/leches": "^0.14.0",
+    "animate.css": "^4.1.1",
+    "buffer": "^6.0.3",
+    "theme-change": "^2.5.0",
+    "three": "^0.160.0",
+    "tweakpane": "^4.0.3",
+    "vue": "^3.3.4",
+    "vue-facing-decorator": "^3.0.4",
+    "vue-router": "4",
+    "vue-toastification": "next",
+    "vuex": "next"
+  },
+  "devDependencies": {
+    "@types/three": "^0.160.0",
+    "@types/node": "^20.10.5",
+    "@types/web": "^0.0.129",
+    "@vitejs/plugin-vue": "^4.2.3",
+    "autoprefixer": "^10.4.16",
+    "daisyui": "latest",
+    "postcss": "^8.4.32",
+    "tailwindcss": "^3.4.0",
+    "typescript": "^5.0.2",
+    "vite": "^4.4.5",
+    "vue-tsc": "^1.8.5"
+  }
+}
